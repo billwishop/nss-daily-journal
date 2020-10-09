@@ -1,16 +1,65 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Daily Journal</title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
 
-    <body>
-        <main id="container">
+<head>
+    <meta charset="utf-8">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
 
-        </main>
+<body>
+    <header>
 
-        <script type="module" src="./scripts/main.js"></script>
-    </body>
+        <!-- White square with name -->
+        <div></div>
+
+        <!-- Purple rectangle with logo -->
+        <div></div>
+
+    </header>
+
+    <main id="container">
+
+        <section>
+
+            <h2>Daily Journal</h2>
+
+            <div>
+                <fieldset class="journal__field">
+                    <label for="journalDate">Date of entry</label>
+                    <input type="date" name="journalDate" id="journalDate" required="true">
+                </fieldset>
+                <form action="">
+                    <fieldset class="journal__field">
+                        <label for="concepts">Concepts Covered</label>
+                        <input type="text" name="title" id="title" required="true">
+                    </fieldset>
+                    <fieldset class="journal__field">
+                        <label for="entry">Journal Entry</label>
+                        <textarea name="" id="" cols="30" rows="10">Text area</textarea>
+                    </fieldset>
+                    <fieldset class="journal__field">
+                        <label for="">Mood for the day</label>
+                        <select name="mood" id="mood">
+                            <option value="happy">happy</option>
+                            <option value="sad">sad</option>
+                            <option value="content">content</option>
+                            <option value="angry">angry</option>
+                            <option value="tired">tired</option>
+                        </select>
+                    </fieldset>
+                    <input type="button" value="Submit entry" class="submit">
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>WillBishop<a href="https://github.com/billwishop">GitHub</a>copyright</p>
+    </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>
