@@ -26,20 +26,27 @@ const journal = [
         mood: "Happy"
     },
     {
-        id: 3,
+        id: 4,
         date: "10/1/2020",
         concept: "Git and Github",
+        entry: "We learned about the significance of having a remote and local versions of your project and how they interact.",
+        mood: "Tired"
+    },
+    {
+        id: 3,
+        date: "9/21/2020",
+        concept: "Test",
         entry: "We learned about the significance of having a remote and local versions of your project and how they interact.",
         mood: "Tired"
     }
 ]
 
-// You export a funciton that provides a version of the raw data in the format that you want
+// You export a function that provides a version of the raw data in the format that you want
 
 export const useJournalEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>
-            Date.parsel(currentEntry.date) - Date.parsel(nextEntry.date)
+            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
         return sortedByDate
 }
