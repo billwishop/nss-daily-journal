@@ -13,6 +13,10 @@ textarea {
 	line-height: 1.5;
 }
 
+main {
+	background-color: #FFC700;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
@@ -21,6 +25,12 @@ h1,h2,h3,h4,h5,h6 {
 .journal__field {
 	display: flex;
 	flex-flow: column;
+	background-color: #C8B9FF;
+	border: 5px solid #6C65F6;
+}
+
+.previousEntry {
+	padding-left: 1em;
 }
 
 .submit {
