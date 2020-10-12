@@ -21,10 +21,10 @@ export const EntryListComponent = () => {
 
     for (const entry of entries) {
         journalHTMLRep += JournalEntryComponent(entry)
-        console.log(journalHTMLRep)
+        
     }
     entryLog.innerHTML += `
-            <section class="journalEntry">
+            <section class="previousEntry">
                 <div>${journalHTMLRep}</div>
             </section>
         `
