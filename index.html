@@ -14,42 +14,48 @@
         <div></div>
 
         <!-- Purple rectangle with logo -->
-        <div></div>
+        <div><h1>Daily Journal</h1></div>
 
     </header>
 
     <main id="container">
 
-        <section>
+        <section class="journal__shadows">
 
-            <h2>Daily Journal</h2>
+            
 
-            <div>
-                <fieldset class="journal__field">
-                    <label for="journalDate">Date of entry</label>
-                    <input type="date" name="journalDate" id="journalDate" required="true">
-                </fieldset>
-                <form action="">
-                    <fieldset class="journal__field">
-                        <label for="concepts">Concepts Covered</label>
-                        <input type="text" name="title" id="title" required="true">
-                    </fieldset>
-                    <fieldset class="journal__field">
-                        <label for="entry">Journal Entry</label>
-                        <textarea name="" id="" cols="30" rows="10">Text area</textarea>
-                    </fieldset>
-                    <fieldset class="journal__field">
-                        <label for="">Mood for the day</label>
-                        <select name="mood" id="mood">
-                            <option value="happy">happy</option>
-                            <option value="sad">sad</option>
-                            <option value="content">content</option>
-                            <option value="angry">angry</option>
-                            <option value="tired">tired</option>
-                        </select>
-                    </fieldset>
-                    <input type="button" value="Submit entry" class="submit">
-                </form>
+            
+            <div class="box first">
+                <div class="box second">
+                    <div class="box third"><div class="box journal">
+                        <fieldset class="journal__field">
+                            <label for="concepts">Concepts Covered</label>
+                            <input type="text" name="title" id="title" required="true">
+                        </fieldset>
+                        <form action="">
+                            <fieldset class="journal__field">
+                                <label for="journalDate">Date of entry</label>
+                            <input type="date" name="journalDate" id="journalDate" required="true">
+                            
+                            </fieldset>
+                            <fieldset class="journal__field">
+                                <label for="entry">Journal Entry</label>
+                                <textarea name="" id="" cols="30" rows="10">Text area</textarea>
+                            </fieldset>
+                            <fieldset class="journal__field">
+                                <label for="">Mood for the day</label>
+                                <select name="mood" id="mood">
+                                    <option value="happy">happy</option>
+                                    <option value="sad">sad</option>
+                                    <option value="content">content</option>
+                                    <option value="angry">angry</option>
+                                    <option value="tired">tired</option>
+                                </select>
+                            </fieldset>
+                            <input type="button" value="Submit entry" class="submit">
+                        </form>
+                    </div></div>
+                </div>
             </div>
         </section>
         <section class="entryLog">
