@@ -1,32 +1,81 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "09/29/2020",
-            "concept": "HTML & CSS",
-            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Happy"
-        },
-        {
-            "id": 2,
-            "date": "9/30/2020",
-            "concept": "Wireframe and Git Commits",
-            "entry": "We learned about the importance of planning your project before coding with a wireframe. Git was also introduced.",
-            "mood": "Happy"
-        },
-        {
-            "id": 4,
-            "date": "10/1/2020",
-            "concept": "Git and Github",
-            "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
-            "mood": "Tired"
-        },
-        {
-            "id": 3,
-            "date": "9/21/2020",
-            "concept": "Test",
-            "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
-            "mood": "Tired"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "09/29/2020",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Happy"
+    },
+    {
+      "id": 2,
+      "date": "9/30/2020",
+      "concept": "Wireframe and Git Commits",
+      "entry": "We learned about the importance of planning your project before coding with a wireframe. Git was also introduced.",
+      "mood": "Happy"
+    },
+    {
+      "id": 4,
+      "date": "10/1/2020",
+      "concept": "Git and Github",
+      "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
+      "mood": "Tired"
+    },
+    {
+      "id": 3,
+      "date": "9/21/2020",
+      "concept": "Test",
+      "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
+      "mood": "Tired"
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "Yes",
+      "entry": "Yes",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "yes",
+      "entry": "yes",
+      "mood": "happy",
+      "id": 6
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "yes",
+      "entry": "yes",
+      "mood": "happy",
+      "id": 7
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "yes",
+      "entry": "yes",
+      "mood": "happy",
+      "id": 8
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "yes",
+      "entry": "yes",
+      "mood": "happy",
+      "id": 9
+    },
+    {
+      "date": "2020-10-31",
+      "concept": "This will hopefully land on the page",
+      "entry": "This will hopefully land on the page. From the future. ",
+      "mood": "happy",
+      "id": 10
+    },
+    {
+      "date": "2020-10-23",
+      "concept": "Here we go",
+      "entry": "Yes, indeedie",
+      "mood": "happy",
+      "id": 11
+    }
+  ]
 }

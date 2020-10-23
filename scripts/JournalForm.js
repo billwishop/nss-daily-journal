@@ -1,8 +1,11 @@
 
+import { saveJournalEntry } from "./JournalDataProvider.js"
+
 const contentElement = document.querySelector(".journal")
+const eventHub = document.querySelector("#container")
 
 export const JournalFormComponent = () => {
-    contentElement = `
+    contentElement.innerHTML = `
     <fieldset class="journal__field">
     <input type="text" name="title" id="title" required="true" placeholder="Concepts Covered">
     </fieldset>
@@ -12,7 +15,7 @@ export const JournalFormComponent = () => {
             <input type="date" name="journalDate" id="journalDate" required="true">
         </fieldset>
         <fieldset class="journal__field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Journal Entry"></textarea>
+            <textarea name="" id="entry" cols="30" rows="10" placeholder="Journal Entry"></textarea>
         </fieldset>
         <fieldset class="journal__field">
             <label for="">Mood for the day</label>
@@ -28,3 +31,30 @@ export const JournalFormComponent = () => {
     </form>                                             
 `
 }
+
+eventHub.addEventListener("click", clickEvent => {
+    if(clickEvent.target.className === "submit") {
+        const date = document.querySelector("#journalDate").value
+        const concept = document.querySelector("#title").value
+        const entry = document.querySelector("#entry").value
+        const mood = document.querySelector("#mood").value
+
+        const newEntry = {
+            date,
+            concept,
+            entry,
+            mood
+        }
+        saveJournalEntry(newEntry)
+    }
+})
+
+
+
+// `
+//         <section id="entry--${entry.id}" class="journalEntry">
+//             <h3>${entry.concept}</h3>
+//             <div>${entry.entry}</div>
+//             <div>${entry.date}</div>
+//         </section>
+//     `
