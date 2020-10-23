@@ -8,7 +8,7 @@
  */
  
 // This is the original data
-
+const eventHub = document.querySelector("#container")
 
 const journal = [
     {
@@ -59,4 +59,25 @@ export const getEntries = () => {
     .then(parsedEntries => {
         allEntries = parsedEntries
     })
+}
+
+export const useEntries = () => {
+    return allEntries.slice()
+}
+
+const dispatchStateChangeEvent = () => {
+    const journalStateChangedEvent = new CustomEvent("journalStateChanged")
+    eventHub.dispatchEvent(journalStateChangedEvent)
+}
+
+export const saveJournalEntry = (newJournalEntry) => {
+    return fetch("http://localhost:8088/entries", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newJournalEntry)
+    })
+    .then(getEntries)
+    .then(dispatchStateChangeEvent)
 }
