@@ -29,41 +29,6 @@
       "mood": "Tired"
     },
     {
-      "date": "2020-10-23",
-      "concept": "Yes",
-      "entry": "Yes",
-      "mood": "happy",
-      "id": 5
-    },
-    {
-      "date": "2020-10-23",
-      "concept": "yes",
-      "entry": "yes",
-      "mood": "happy",
-      "id": 6
-    },
-    {
-      "date": "2020-10-23",
-      "concept": "yes",
-      "entry": "yes",
-      "mood": "happy",
-      "id": 7
-    },
-    {
-      "date": "2020-10-23",
-      "concept": "yes",
-      "entry": "yes",
-      "mood": "happy",
-      "id": 8
-    },
-    {
-      "date": "2020-10-23",
-      "concept": "yes",
-      "entry": "yes",
-      "mood": "happy",
-      "id": 9
-    },
-    {
       "date": "2020-10-31",
       "concept": "This will hopefully land on the page",
       "entry": "This will hopefully land on the page. From the future. ",
@@ -76,6 +41,27 @@
       "entry": "Yes, indeedie",
       "mood": "happy",
       "id": 11
+    },
+    {
+      "date": "2020-10-24",
+      "concept": "Learned a lot ",
+      "entry": "API stuff",
+      "mood": "happy",
+      "id": 12
+    },
+    {
+      "date": "2020-10-26",
+      "concept": "Saving Entries",
+      "entry": "Saving Entries",
+      "mood": "content",
+      "id": 13
+    },
+    {
+      "date": "2020-10-26",
+      "concept": "Still Working?",
+      "entry": "Still Working?",
+      "mood": "content",
+      "id": 14
     }
   ]
 }
