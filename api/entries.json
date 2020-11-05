@@ -1,67 +1,61 @@
 {
   "entries": [
     {
+      "date": "2020-11-05",
+      "concept": "Mood Test",
+      "entry": "Please store the moodId",
+      "moodId": "5",
+      "id": 1
+    },
+    {
+      "date": "2020-11-05",
+      "concept": "Here we go again",
+      "entry": "",
+      "moodId": "3",
+      "id": 2
+    },
+    {
+      "date": "2020-11-06",
+      "concept": "Post Mood Test",
+      "entry": "Hello?",
+      "moodId": "1",
+      "id": 3
+    },
+    {
+      "date": "2020-11-05",
+      "concept": "Trying",
+      "entry": "Trying",
+      "moodId": "2",
+      "id": 4
+    },
+    {
+      "date": "2020-11-05",
+      "concept": "Test",
+      "entry": "test",
+      "moodId": "4",
+      "id": 5
+    }
+  ],
+  "moods": [
+    {
       "id": 1,
-      "date": "09/29/2020",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Happy"
+      "label": "happy"
     },
     {
       "id": 2,
-      "date": "9/30/2020",
-      "concept": "Wireframe and Git Commits",
-      "entry": "We learned about the importance of planning your project before coding with a wireframe. Git was also introduced.",
-      "mood": "Happy"
-    },
-    {
-      "id": 4,
-      "date": "10/1/2020",
-      "concept": "Git and Github",
-      "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
-      "mood": "Tired"
+      "label": "sad"
     },
     {
       "id": 3,
-      "date": "9/21/2020",
-      "concept": "Test",
-      "entry": "We learned about the significance of having a remote and local versions of your project and how they interact.",
-      "mood": "Tired"
+      "label": "content"
     },
     {
-      "date": "2020-10-31",
-      "concept": "This will hopefully land on the page",
-      "entry": "This will hopefully land on the page. From the future. ",
-      "mood": "happy",
-      "id": 10
+      "id": 4,
+      "label": "angry"
     },
     {
-      "date": "2020-10-23",
-      "concept": "Here we go",
-      "entry": "Yes, indeedie",
-      "mood": "happy",
-      "id": 11
-    },
-    {
-      "date": "2020-10-24",
-      "concept": "Learned a lot ",
-      "entry": "API stuff",
-      "mood": "happy",
-      "id": 12
-    },
-    {
-      "date": "2020-10-26",
-      "concept": "Saving Entries",
-      "entry": "Saving Entries",
-      "mood": "content",
-      "id": 13
-    },
-    {
-      "date": "2020-10-26",
-      "concept": "Still Working?",
-      "entry": "Still Working?",
-      "mood": "content",
-      "id": 14
+      "id": 5,
+      "label": "tired"
     }
   ]
 }
