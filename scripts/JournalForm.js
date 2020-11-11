@@ -30,7 +30,7 @@ const render = (moodObj) => {
             }
             </select>
         </fieldset>
-        <input type="button" value="Submit entry" class="submit">
+        <input type="button" value="Save entry" class="submit">
     </form>                                             
 `
 }
@@ -61,10 +61,3 @@ eventHub.addEventListener("click", clickEvent => {
 
 
 
-// `
-//         <section id="entry--${entry.id}" class="journalEntry">
-//             <h3>${entry.concept}</h3>
-//             <div>${entry.entry}</div>
-//             <div>${entry.date}</div>
-//         </section>
-//     `
