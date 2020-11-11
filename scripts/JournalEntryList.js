@@ -6,7 +6,7 @@
  */
 
 
-import { useJournalEntries, getEntries, useEntries } from "./JournalDataProvider.js"
+import { useJournalEntries, getEntries, useEntries, deleteJournalEntry } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
 
@@ -14,23 +14,7 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 const entryLog = document.querySelector(".entryLog")
 const eventHub = document.querySelector("#container")
 
-// export const EntryListComponent = () => {
-//     // Use the journal entry data from the data provider component
-//     const entries = useJournalEntries()
 
-//     let journalHTMLRep = ""
-
-//     for (const entry of entries) {
-//         journalHTMLRep += JournalEntryComponent(entry)
-        
-//     }
-//     entryLog.innerHTML += `
-//             <section class="previousEntry">
-//                 <div>${journalHTMLRep}</div>
-//             </section>
-//         `
-    
-// }
 
 eventHub.addEventListener("journalStateChanged", () => EntryListFromAPI())
 
@@ -47,9 +31,17 @@ const render = (entryArray) => {
     for (const entry of entryArray) {
         entryHTMLRep += JournalEntryComponent(entry)
     }
-    entryLog.innerHTML += `
+    entryLog.innerHTML = `
         <section class="previousEntry">
         <div>${entryHTMLRep}</div>
         </section>
     `
 }
+
+eventHub.addEventListener("click", clickEvent => {
+    if(clickEvent.target.id.startsWith("deleteEntry--")) {
+        const [prefix, id] = clickEvent.target.id.split("--")
+
+        deleteJournalEntry(id)
+    }
+})
