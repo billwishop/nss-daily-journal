@@ -2,24 +2,10 @@
   "entries": [
     {
       "date": "2020-11-05",
-      "concept": "Mood Test",
-      "entry": "Please store the moodId",
-      "moodId": "5",
-      "id": 1
-    },
-    {
-      "date": "2020-11-05",
       "concept": "Here we go again",
       "entry": "",
       "moodId": "3",
       "id": 2
-    },
-    {
-      "date": "2020-11-06",
-      "concept": "Post Mood Test",
-      "entry": "Hello?",
-      "moodId": "1",
-      "id": 3
     },
     {
       "date": "2020-11-05",
@@ -34,6 +20,13 @@
       "entry": "test",
       "moodId": "4",
       "id": 5
+    },
+    {
+      "date": "2020-11-11",
+      "concept": "Deleting with a button",
+      "entry": "Deleting with a button ",
+      "moodId": "1",
+      "id": 6
     }
   ],
   "moods": [

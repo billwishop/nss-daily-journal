@@ -6,10 +6,11 @@
 
 export const JournalEntryComponent = (entry) => {
     return `
-        <section id="entry--${entry.id}" class="journalEntry">
+        <section class="journalEntry">
             <h3>${entry.concept}</h3>
             <div>${entry.entry}</div>
             <div>${entry.date}</div>
+            <button id="deleteEntry--${entry.id}">Delete</button>
         </section>
     `
 }
