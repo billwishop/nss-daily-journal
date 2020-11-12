@@ -8,20 +8,26 @@
 </head>
 
 <body>
-    <header>
+    <section id="header">
 
-        <!-- White square with name -->
-        <div></div>
-
+        
+        
         <!-- Purple rectangle with logo -->
-        <div><h1>Daily Journal</h1></div>
+        <header id="purple">
+            <h1 id="page__title">Daily Journal</h1>
+        </header>
 
-    </header>
+    </section>
 
     <main id="container">    
-        <section class="box journal"></section>
-        <section class="filters"></section>
-        <section class="entryLog"></section>
+        <div id="journal__with__nav">
+            <section id="nav"></section>
+            <section class="box journal"></section>
+        </div>
+        <div id="filter__log">
+            <section class="filters"></section>
+            <section class="entryLog"></section>
+        </div>
     </main>
 
     <footer>

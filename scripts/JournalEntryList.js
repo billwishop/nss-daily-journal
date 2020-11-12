@@ -62,3 +62,14 @@ eventHub.addEventListener("moodChosen", (event) => {
             EntryListFromAPI()
         }
 })
+
+const entryLocation = document.querySelector("#filter__log")
+
+eventHub.addEventListener("displayPreviousEntries", () => {
+    entryLocation.style.display = "block";
+})
+
+eventHub.addEventListener("hidePreviousEntries", () => {
+    entryLocation.style.display = "none";
+})
+
