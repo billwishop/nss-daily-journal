@@ -22,7 +22,10 @@ body {
 	display: flex;
 }
 
-
+#logo {
+	width: 75%;
+    padding-left: 1em;
+}
 
 #filter__log {
 	background-color: #C8B9FF;
